@@ -8,7 +8,6 @@
 			body {
 				margin: 0;
 				overflow: hidden;
-				background-color: black;
 			}
 
 			iframe {
@@ -40,6 +39,7 @@
 			},100);
 			function run(url){
 				clearInterval(a);
+				document.body.style.backroundcolor='black';
 				document.getElementById('body').innerHTML='<iframe src="https://www.youtube.com/embed/'+url+'"></iframe>'
 			}
 		</script>
