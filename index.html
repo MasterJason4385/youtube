@@ -24,7 +24,8 @@
 		<script>
 			var a=setInterval(function(){
 				$("a.gs-title").each(function() {
-					b=this.href.substr(32,43)
+		      			b=this.href.substr(32,43)
+                                        alert(b)
 					console.log(b);
 					var attributes = $.map(this.attributes, function(item) {
 						return item.name;
