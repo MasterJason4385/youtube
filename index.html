@@ -34,6 +34,7 @@ https://www.youtube.com/watch?v=ViY4w10f1qo
 				if(event.keyCode===13){
 					event.preventDefault()
 					q=document.getElementById('query').value
+					document.getElementById('query').value=''
 					site=false
 					for(var i=0;i<targets.length;i++){
 						target=targets[i]
