@@ -16,8 +16,8 @@
 			}
 
 			#iframe {
-				width: 100%;
-				height: 100%;
+				width: calc(100vw - 50px);
+				height: calc(calc(16 / 9) * calc(100vw - 50px));
 			}
 		</style>
 	</head>
@@ -28,7 +28,6 @@
 https://www.youtube.com/watch?v=ViY4w10f1qo
 		*/
 			targets=['?v='];
-			document.body.style.height=(window.innerHeight-50)+'px';
 			document.getElementById
 			document.getElementById('query').addEventListener('keydown',function(event){
 				if(event.keyCode===13){
