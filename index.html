@@ -29,7 +29,7 @@
 		<script>/*
 https://www.youtube.com/watch?v=ViY4w10f1qo
 		*/
-			targets=['?v='];
+			targets=['youtube.com/watch?v=','youtu.be/','&v='];
 			document.getElementById
 			document.getElementById('query').addEventListener('keydown',function(event){
 				if(event.keyCode===13){
@@ -65,7 +65,7 @@ https://www.youtube.com/watch?v=ViY4w10f1qo
 						if(q[j]==target[pos]){pos++}
 						if(pos==target.length){out=q.substring(j+1,j+12);pos++}
 					}
-					if(out){site='https://youtube.com/embed/'+out;break}
+					if(out){site='https://youtube.com/embed/'+out+'&hd=1';break}
 				}
 				alert(site)
 				if(site){
